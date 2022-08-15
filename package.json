@@ -1,15 +1,40 @@
 {
-  "name": "scrapper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "sw.js",
+  "name": "yauzl",
+  "version": "2.10.0",
+  "description": "yet another unzip library for node",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js",
+    "test-cov": "istanbul cover test/test.js",
+    "test-travis": "istanbul cover --report lcovonly test/test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thejoshwolfe/yauzl.git"
+  },
+  "keywords": [
+    "unzip",
+    "zip",
+    "stream",
+    "archive",
+    "file"
+  ],
+  "author": "Josh Wolfe <thejoshwolfe@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thejoshwolfe/yauzl/issues"
+  },
+  "homepage": "https://github.com/thejoshwolfe/yauzl",
   "dependencies": {
-    "puppeteer": "^16.1.0"
-  }
+    "fd-slicer": "~1.1.0",
+    "buffer-crc32": "~0.2.3"
+  },
+  "devDependencies": {
+    "bl": "~1.0.0",
+    "istanbul": "~0.3.4",
+    "pend": "~1.2.0"
+  },
+  "files": [
+    "index.js"
+  ]
 }
