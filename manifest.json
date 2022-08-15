@@ -1,0 +1,15 @@
+{
+ 
+    "manifest_version":3,
+    "name":"Scrapper",
+    "version":"0.0.1",
+    "action": {
+        "default_title": "click_me"
+    },
+    "background": {
+        "service_worker":"sw.js"
+    }
+
+}
+
+
